@@ -2,7 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// 関数でAppというコンポーネントを定義している。
 function App() {
+  // AppコンポーネントではHTML要素を返している。
   return (
     <div className="App">
       <header className="App-header">
@@ -23,4 +25,5 @@ function App() {
   );
 }
 
+// 定義したAppをデフォルトエクスポートしている。
 export default App;
