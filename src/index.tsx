@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';  // App.jsからApp関数を取り込んでいる。
+// import App from './App';  // App.jsからApp関数を取り込んでいる。
+// Appの代わりにHelloをインポートする
+import Hello from './components/Hello'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -12,8 +14,11 @@ root.render(
   // 描画するJSXタグを指定している。
   <React.StrictMode>
     {/* Appはsrc/App.tsxからインポートしたものを使用している。 */}
-    <App />
-  </React.StrictMode>
+    {/* AppからHelloに置き換える */}
+    <Hello />
+    {/* <App /> */}
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
