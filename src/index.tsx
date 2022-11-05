@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
   // index.htmlにあるrootをIDにもつ要素を指定している。
   document.getElementById('root') as HTMLElement
 );
-root.render(
+ReactDOM.render(
   // 描画するJSXタグを指定している。
   <React.StrictMode>
     {/* Appはsrc/App.tsxからインポートしたものを使用している。 */}
