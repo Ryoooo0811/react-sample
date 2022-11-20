@@ -1,15 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';  // App.jsからApp関数を取り込んでいる。
 // Appの代わりにHelloをインポートする
 import Hello from './components/Hello'
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(
-  // index.htmlにあるrootをIDにもつ要素を指定している。
-  document.getElementById('root') as HTMLElement
-);
+// const root = ReactDOM.createRoot(
+//   // index.htmlにあるrootをIDにもつ要素を指定している。
+//   document.getElementById('root') as HTMLElement
+// );
 ReactDOM.render(
   // 描画するJSXタグを指定している。
   <React.StrictMode>
