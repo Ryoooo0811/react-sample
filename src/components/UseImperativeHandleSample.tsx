@@ -1,7 +1,7 @@
 import React, { useState, useRef, useImperativeHandle } from "react";
 
 const Child = React.forwardRef((props, ref) => {
-  const {message, setMessage} = useState<string | null>(null)
+  const [message, setMessage] = useState<string | null>(null)
 
   // useImperativeHandleで親のrefから参照できる値を指定
   useImperativeHandle(ref, () => ({
